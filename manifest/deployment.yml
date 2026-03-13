@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dp1
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: dp1
+  template:
+    metadata: 
+      labels:
+        app: dp1        
+    spec:
+      containers:
+        - name: cont1
+          image: shashankkambala/camp2:appimage
+          ports:
+            - containerPort: 80  
