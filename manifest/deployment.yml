@@ -16,4 +16,4 @@ spec:
         - name: cont1
           image: shashankkambala/camp2:appimage
           ports:
-            - containerPort: 80  
+            - containerPort: 3000
