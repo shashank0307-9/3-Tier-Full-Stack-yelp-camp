@@ -17,3 +17,7 @@ spec:
           image: shashankkambala/camp2:appimage
           ports:
             - containerPort: 3000
+          envFrom:
+            - secretRef:
+                name: mysecret
+               
